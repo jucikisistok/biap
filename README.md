@@ -9,7 +9,7 @@ First of all, good job! There are several approaches that you may take from here
 
 - go, enjoy your day or study something else
 
-- proceed in the manual (once you'll learn about loops, everything is going to be much more exciting!)
+- proceed with the manual (once you'll learn about loops, everything is going to be much more exciting!)
 
 - try any of the exercises below
 
