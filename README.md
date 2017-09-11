@@ -1,5 +1,3 @@
-# Bioinformatics and Programming TA
-
 <h2> Roster </h2>
 Please <a href="https://jucirkm.typeform.com/to/Yk9bJI">submit your name here</a> :)
 
