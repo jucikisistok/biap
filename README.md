@@ -9,8 +9,11 @@ Input: two equal-length DNA sequences, representing nontemplate strands for prot
 Output: description and location of all mutations or a message indicating that the sequences are identical
 
 Step 1: read in sequences, initialize variables and read in data
+
 Step 2: Transcription
+
 Step 3: Translation
+
 Step 4: String comparison
 
 Bonus:
