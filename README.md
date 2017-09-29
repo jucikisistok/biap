@@ -1,22 +1,23 @@
-<h2> Roster </h2>
-Please <a href="https://jucirkm.typeform.com/to/Yk9bJI">submit your name here</a> :)
+<h2>So, you are done with the mandatory exercises and want a challenge. Good.</h2>
 
-<h2>Feedback form</h2>
-If you have anything in mind or any feedback that you'd like to give me at any point, then please fill out this form - <a href="https://jucirkm.typeform.com/to/WHT5Dm">click me</a>!
+<h3>Guided programming project from Chapter 2</h3>
+Goal: identify the location of all mutations between two strings.
+Input: two equal-length DNA sequences, representing nontemplate strands for protein coding regions in 5’ to 3’ orientation
+Output: description and location of all mutations or a message indicating that the sequences are identical
 
-<h2>If you are done with everything</h2>
-First of all, good job! There are several approaches that you may take from here: 
+Step 1: read in sequences, initialize variables and read in data
+Step 2: Transcription
+Step 3: Translation
+Step 4: String comparison
 
-- go, enjoy your day or study something else
-
-- proceed with the manual (once you'll learn about loops, everything is going to be much more exciting!)
-
-- try any of the exercises below
-
-<h2>So, you want a challenge. Good.</h2>
-Totally not mandatory, but absolutely fun. (Okay, this probably depends on your definition of fun.)
-
-These are a little bit harder than what you've found in the manual so far, so don't get frustrated if it takes more time to get them right. Also, don't hesitate to ask for help if you're stuck!
+Bonus:
+-	Modify the program so that it can handle input sequences that contain:
+    - Uppercase and lowercase characters
+    - Characters that do not correspond to any nucleotide
+-	Find a way to include the stop codon and represent a stop in your program when the stop codon is encountered
+-	Modify the program so the user can choose whether to compare DNA sequences directly, translate them before comparing or both
+-	Allow the user to input either the template or nontemplate strand in either 5’  3’ or 3’  5’ orientation
+-	Modify the program so that it outputs a txt file with the results
 
 <h3>Century from year</h3>
 Write a function that computes the century, given the year.
@@ -28,7 +29,7 @@ The function should return 20 for 1905 and 17 for 1700.
 <h3>Complementary DNA</h3>
 Write a function that given a strand of DNA, computes the complementary sequence.
 
-Hint: in a couple of weeks you'll be able to do this using loops. For now, explore some built-in functions, namely - maketrans, .replace() and re.sub(). Read the documentation for these and choose the one that sounds like the best tool to use for this task. If you get confused, just ask!
+Yes, you need loops for this.
 
 When you are done with that, you can also explore cases like:
 - what happens if the input string contains characters that aren't letters (but numbers or weird stuff like #?!)? How do you deal with that?
