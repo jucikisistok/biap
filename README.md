@@ -1,8 +1,11 @@
 <h2>So, you are done with the mandatory exercises and want a challenge. Good.</h2>
 
 <h3>Guided programming project from Chapter 2</h3>
+
 Goal: identify the location of all mutations between two strings.
+
 Input: two equal-length DNA sequences, representing nontemplate strands for protein coding regions in 5’ to 3’ orientation
+
 Output: description and location of all mutations or a message indicating that the sequences are identical
 
 Step 1: read in sequences, initialize variables and read in data
