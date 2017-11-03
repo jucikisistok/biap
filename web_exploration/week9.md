@@ -45,5 +45,9 @@ We see a small aligned region at the beginning, a long gap, then another aligned
 This suggests that the M2 gene has two exons separated by an intron. Since we are able to observe this in this particular case, we can say that the local alignment is better in the biological sense as we were able to learn something about viruses.
 
 ### Part 3: Using alignment to investigate virulence
-Coming soon
+- *What are the scores and sequence identities for a comparison of the two avian viruses? Are the differences between the human isolate and the avian isolates greater than the differences among avian isolates?*  
+The two avian viruses have a score of 8205 and they are 96% identical.  
+Avian sequence 1 is 97,5% identical to the human isolate (score: 8575) and avian sequence 2 is 95,2% identical to the human isolate (score: 8286) - these differences are comparable to the differences between the two avian strains.
 
+- *Based on your results (which of course are limited—it would be necessary to do many more comparisons in reality), do you think there is evidence that human adaptation is occurring in H5N1 viruses that might merit concern about human-to-human transmission in the near future?*  
+Based on this data we can't say that H5N1 HA is changing exceptionally fast. It's likely that the human isolate is an avian strain that someone in close contact with birds was able to catch and not a developing human H5N1.
