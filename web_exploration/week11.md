@@ -52,4 +52,32 @@ The Tamura model gives slightly smaller distances, however, the overall tendenci
 They should look similar to the tree above.
 
 # Chapter 7
-Coming soon.
+
+I used the following sequences:  
+Human: https://www.ncbi.nlm.nih.gov/protein/P68104   
+Yeast: https://www.ncbi.nlm.nih.gov/protein/P02994   
+Escherichia coli: https://www.ncbi.nlm.nih.gov/protein/P0CE47   
+Bacillus subtilis: https://www.ncbi.nlm.nih.gov/protein/P33166   
+Methanosarcina acetivorans: https://www.ncbi.nlm.nih.gov/protein/Q8TRC4   
+Haloarcula marismortui: https://www.ncbi.nlm.nih.gov/protein/P16018   
+
+- *In what important way is a tree computed using the UPGMA algorithm different from a tree computed by the neighbor-joining algorithm? Which do you think better models evolution, and why?*  
+UPGMA assumes a constant rate of evolution, so we see the same branch lengths between two species and their common ancestor. This assumption basically means that according to UPGMA, if two species have been evolving for the same time since the split, then they should have the same number of mutations but this is not necessarily so. 
+NJ doesn’t assume that the rate of evolution will be the same for both species, hence, we can properly calculate different branch lengths. This is a better match for real-world biology, because even though the basic rate of mutation should be similar for all species, there are conditions that could increase the rate of mutation for one species over another, or strong selective pressure could act on one species resulting in more mutations becoming fixed in the genome in a shorter time.
+
+- *Summarize concisely what you learned about the relationships among the three domains from your trees. Were the trees you developed by different methods consistent in terms of branching orders and evolutionary pathways? How consistent were they in terms of branch length?*  
+These are the trees that were obtained using the different methods:
+
+![UPGMA tree](https://github.com/jucikisistok/biap/blob/master/figures/jc_upgma.png)  
+*UPGMA tree*
+
+![NJ tree](https://github.com/jucikisistok/biap/blob/master/figures/jc_nj.png)   
+*NJ tree*
+
+![ML tree](https://github.com/jucikisistok/biap/blob/master/figures/ml.png)  
+*Maximum likelihood tree*
+
+We can see that in all cases we get the same grouping - the two bacteria, two archaea and two eukaryotes are clustered together, which validates the tree since we already know these relationships from other data. All trees suggest a closer relationship between archaea and eukarya than between either and bacteria. It's hard to come to conclusions in terms of branch length based on these particular images, however, the branch lengths should be relatively consistent.
+
+- *It would make sense that if one highly conserved protein works as a “molecular clock,” then any other similarly conserved protein would give the same results. To test that assumption, generate a phylogeny with a different highly conserved protein, the heat-shock protein Hsp70 (also known as DnaK in bacteria). Download the amino-acid sequence of the Hsp70 protein for the same six organisms (NP_002145, AET14830, DNAK_ECOLI, DNAK_BACSU, YP_306886, DNAK_HALMA), align the sequences, examine and curate the alignment and produce trees using neighbor-joining and maximum likelihood methods. Summarize the results of this analysis and discuss anomalies between the two molecular clocks. What did you learn about the reliability of evolutionary hypotheses based on molecular data from this exercise?*
+These trees look very different, however, the pairs of species from each domain are still more similar to each other than to the other domains. We see that now the bacteria and archaea group are closer, and the human gene is much farther from the yeast gene than in the previous case. We can see that we need to choose our "clock" sequences carefully, and we also need to confirm our hypotheses using many different clocks and other kinds of data.
