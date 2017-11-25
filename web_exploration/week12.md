@@ -7,6 +7,9 @@ If we re-run the analysis and only list ORFs that are longer than 300 nucleotide
 
 I did the analysis with the default parameters and smartBLAST.
 
+![ORF Finder](https://github.com/jucikisistok/biap/blob/master/figures/orffinder.png)  
+*ORF Finder's output*  
+
 **ORF19**
 -	Frame 2, Strand +, 1478-2572
 -	MULTISPECIES: VanA-type vancomycin resistance histidine kinase VanS
@@ -48,6 +51,9 @@ I did the analysis with the default parameters and smartBLAST.
 -	MULTISPECIES: VanA-type vancomycin resistance DNA-binding response regulator VanR [Bacilli]
 
 ### PART II: Sequence-Based ORF Identification Using NEBcutter
+
+![NEBCutter](https://github.com/jucikisistok/biap/blob/master/figures/nebcutter.png)  
+*NEBCutter's output (after editing ORF names)*  
 
 **A**
 -	364 aa, coding region: 1478…2572
@@ -122,6 +128,9 @@ I did the analysis with the default parameters and smartBLAST.
 -	hypothetical protein HMPREF1374_02349 [Enterococcus faecium P1190]
 
 ### Part III: Shine-Dalgarno Prediction and Codon Usage Analysis with EasyGene
+
+![EasyGene](https://github.com/jucikisistok/biap/blob/master/figures/easygene.png)  
+*EasyGene's output*  
 
 **Does it seem like EasyGene ignores ORFs that lack Shine-Dalgarno sequences or that do not match codon usage data?**  
 Seems like it – EasyGene only finds 15 ORFs while ORF Finder finds 98 using the default parameters. However, if we look carefully, some ORFs are the same – we can hypothesise that the others are not present in the EasyGene output because no Shine-Dalgarno sequence was found or they didn’t match the codon usage data.
