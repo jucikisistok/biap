@@ -133,7 +133,7 @@ The biggest strength of functions is that they are **highly reusable** – hence
 ![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig19.png)  
 *This returns (True, [4, 5, 9, 2])*
 
-See what’s wrong here? We essentially wrote a function that’s only good for one thing – analysing the [4, 5, 9, 2] list, no matter if I try to call it with a different argument later. Moral of the story: never define anything inside the function that should be passed in as an argument. 
+See what’s wrong here? We essentially wrote a function that’s only good for one thing – analysing the [4, 5, 9, 2] list, no matter if we try to call it with a different argument later. Moral of the story: never define anything inside the function that should be passed in as an argument. 
 
 <h2>Calling functions inside other functions</h2>
 As I mentioned earlier, the magic of functions is in the reusability – and in fact, you can absolutely benefit from a function inside another function (this is also called “not reinventing the wheel”). If you think about a function in terms of the value it returns, and not the series of steps that need to be taken to get to that value (or the blood, sweat and tears you put into constructing those steps), then it becomes fairly straight-forward.  
