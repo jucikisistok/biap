@@ -102,10 +102,54 @@ Of course, this only works if the dictionary has all the keys that the list spec
 *Prints {'Read2': 5, 'Read3': 9}, {'Read1': 3, 'Read3': 15} and :(.*
 
 <h2>The anatomy of a function</h2>
-Coming soon.
+The reason why we use functions is because writing down the same thing over and over again is not only frustrating, but also fairly detrimental in terms of productivity. This is how an average function looks like:  
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig_15.png)  
+*The anatomy of a simple function.*
+
+For example, whenever we need a function to divide two numbers, we can call my_function the following way:
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig16.png)  
+*Calling a function and storing the result in a variable.*
+
+In this example, we also store the result (aka the stuff that the function returns) in a variable called divide, so we can reuse this value later. This example illustrates it very well that we need to keep track of what our arguments are and what their correct order is – for example, if we want to calculate what 7 divided by 5 is, we need to specify 7 as our first argument and 5 as our second argument, otherwise we get 5/7. This type of bug is exceptionally dangerous – it’s easy to get caught up in the joy of writing a program that works, but if we aren’t careful, the results can lead us astray. 
+
+Also, we need to be careful of what kind of data type we use – since division makes sense in terms of integers and floats, if we pass in something else, like strings or dictionaries, we won’t have a particularly good time. (Unless you’re into errors, that is.)
+
+No matter how long or complicated a function is, the result that you can extract from it is something that is written next to **the very first return statement the program encounters**. This is why you need to be extremely careful about where you put it – the wrong placement can easily result in faulty outputs. Let’s say you want to see whether there are odd numbers in a list, so you write code like this:
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig17.png)  
+*This returns False.*
+
+This function will return False, which is obviously not the right result. Since both return statements are inside the for loop, what will happen here is that the function looks at the very first number, in this case 4, and returns something (in this case, False). However, what you really want is this:
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig18.png)  
+*This returns True.*
+
+The difference is subtle, but very powerful. In this case, we have the second return statement outside of the for loop – essentially, we say that okay, let’s iterate through all the list and only return True if there is an odd number there – otherwise, once we finished with looking through the entire list but haven’t found any odd numbers, let’s return False.
+
+The biggest strength of functions is that they are **highly reusable** – hence, hard-coding values into them leads to bad karma, unwanted surprises and (potentially) banging your head against the table. Let’s see an example:
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig19.png)  
+*This returns (True, [4, 5, 9, 2])*
+
+See what’s wrong here? We essentially wrote a function that’s only good for one thing – analysing the [4, 5, 9, 2] list, no matter if I try to call it with a different argument later. Moral of the story: never define anything inside the function that should be passed in as an argument. 
 
 <h2>Calling functions inside other functions</h2>
-Coming soon.
+As I mentioned earlier, the magic of functions is in the reusability – and in fact, you can absolutely benefit from a function inside another function (this is also called “not reinventing the wheel”). If you think about a function in terms of the value it returns, and not the series of steps that need to be taken to get to that value (or the blood, sweat and tears you put into constructing those steps), then it becomes fairly straight-forward.  
+Let’s see an example:
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig20.png)  
+*Returns "Northern downpour sends its love”. Sweet.*
+
+In this case, we use the odd function to “help out” pretty_odd. Since number_list indeed has odd numbers, is_it_odd = odd(nr_list) is essentially is_it_odd = True. Of course, there is no point in writing two separate functions to achieve this exact functionality, but it was a simple way to illustrate my point :)  
+
+The arguments should only match up within a function (but make no mistake, there they should definitely match up). If I want, I can call the argument of pretty_odd something other than nr_list, I just need to be careful to use it when I call odd inside pretty_odd. Just like this:
+
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig20.png)  
+*This is exactly the same as the previous one.*
 
 <h2>How to debug</h2>
-Coming soon.
+It can often happen that your code is not behaving like it should – you either don’t get the right results, or you get an error, plain and simple. In such cases it’s always a good idea to go ahead and comment things out – it helps you to pinpoint where your code goes wrong. Also, there is no shame in printing – quite the contrary – it is extremely helpful when it comes to understanding what your script actually does.  
+
+In fact, whenever you need to write some code, it’s highly recommended to write a couple of lines and print the results. Sure, it might slow you down a bit, but it’s still less time-consuming than trying to find a little typo or indentation problem in 50 (or 500) lines of code :)    
