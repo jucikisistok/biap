@@ -1,6 +1,3 @@
-If you have any questions popping up while solving these exercises (be it a theoretical one or something practical about the web tools not giving you the answers you wanted), you can submit them to this board: https://trello.com/b/jrWFwod2/programming-bioinformatics  
-This way we can collect the pain points easily and make sure that everyone is on the same page at the end of the day :)
-
 # Chapter 4
 - *In their original survey, Salyers and colleagues used a cutoff of 95% identity for sequences considered similar enough to have been shared by HGT. You can get a quick measure of identity by using the max ident score in the BLAST results—however, you can also get a high max ident for a very small matched region, so also consider the query coverage. Looking at these parameters, are the matches that BLAST retrieved highly similar to your query, or less similar? Do your data suggest that all or most of them represent the same gene, transferred from organism to organism by HGT?*  
 We can see in the list of top-matching sequences that they are extremely similar with high query coverage. These come from many different species, which suggests the horizontal gene transfer of the same gene rather than a common ancestor and mutation over a long period of time.
