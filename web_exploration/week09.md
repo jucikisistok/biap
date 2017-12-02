@@ -1,6 +1,3 @@
-If you have any questions popping up while solving these exercises (be it a theoretical one or something practical about the web tools not giving you the answers you wanted), you can submit them to this board: https://trello.com/b/jrWFwod2/programming-bioinformatics  
-This way we can collect the pain points easily and make sure that everyone is on the same page at the end of the day :) 
-
 # Chapter 3
 
 ### Part 1: Pairwise global alignment with the Needleman-Wunsch algorithm
