@@ -146,7 +146,7 @@ In this case, we use the odd function to “help out” pretty_odd. Since number
 
 The arguments should only match up within a function (but make no mistake, there they should definitely match up). If I want, I can call the argument of pretty_odd something other than nr_list, I just need to be careful to use it when I call odd inside pretty_odd. Just like this:
 
-![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig20.png)  
+![Functions](https://github.com/jucikisistok/biap/blob/master/figures/fig21.png)  
 *This is exactly the same as the previous one.*
 
 <h2>How to debug</h2>
